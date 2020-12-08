@@ -1,8 +1,6 @@
 with open("data", "r") as f:
     data = f.read().splitlines()
 
-fail = True
-
 for idx, item in enumerate(data):
     command = item.split(" ")
     if command[0] == "nop":
